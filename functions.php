@@ -7,12 +7,18 @@ switch ($oper) {
     case "add":
         $sum = $num01 + $num02;
         break;
-        case "sub":
-            $sum = $num01 - $num02;
-            break;
-            default:
-            $sum = "There was an error!";
-            break;
+    case "sub":
+        $sum = $num01 - $num02;
+        break;
+    case "multiply":
+        $sum = $num01 * $num02;
+        break;
+    case "divide":
+        $sum = $num01 / $num02;
+        break;
+    default:
+        $sum = "There was an error!";
+        break;
 }
 
 return $sum;
